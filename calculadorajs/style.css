@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(to bottom, #3f6776, #b9e0f1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.calculadora {
+  background: #6c888a;
+  padding: 20px;
+  border-radius: 30px;
+  width: 250px;
+  background: linear-gradient(to right, #2e304e, #5aa6c4);
+  box-shadow: 10px 10px 20px #0d0531;
+}
+
+
+#display {
+  position: relative;
+  width: 226px;
+  height: 60px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #a3a3a3,
+              inset -5px -5px 10px #ffffff;
+}
+  
+
+.teclas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  border: none;
+  border-radius: 40%;
+  font-size: 26px;
+  background: #c1c7d4;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.2s;
+  box-shadow: inset 5px 5px 10px #5f5e68,
+              inset -5px -5px 10px #aab9ea;
+}
+
+.igual {
+  grid-column: span 2;
+  border-radius: 25px;
+  background: linear-gradient(to right, #2b3b41, #243863);
+  color: white;
+}
+.igual:hover {
+  transition: 0.2s;
+  box-shadow: inset 5px 5px 10px #1b2530,
+              inset -5px -5px 10px #4c6a8e;
+}
+.operador {
+  background: linear-gradient(to right, #2b3b41, #243863);
+  color: white;
+}
+.operador:hover {
+  transition: 0.2s;
+  box-shadow: inset 5px 5px 10px #1b2530,
+              inset -5px -5px 10px #4c6a8e;
+}
+.acoes {
+  background: linear-gradient(to right, #52717c, #3c5690);
+  color: white;
+}
+.acoes:hover {
+  transition: 0.2s;
+  box-shadow: inset 5px 5px 10px #1b2530,
+              inset -5px -5px 10px #4c6a8e;
+}
