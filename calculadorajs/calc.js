@@ -23,9 +23,15 @@ let display = document.getElementById('display');
   // Faz o cálculo matemático
   function calculate() {
       try {
-          // O eval() pega o texto do visor e resolve o cálculo
-          display.value = eval(display.value);
-      } catch (error) {
-          display.value = "Erro";
-      }
+        // Substitui todos os % por /100 antes de calcular
+        let expressao = display.value.replace(/%/g, '/100');
+        display.value = eval(expressao);
+    } catch (error) {
+        display.value = "Erro";
+    }
+  }
+
+  //Back apaga o último caractere do visor
+  function back() {
+      display.value = display.value.slice(0, -1);
   }
